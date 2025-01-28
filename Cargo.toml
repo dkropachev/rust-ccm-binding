@@ -1,0 +1,13 @@
+[package]
+name = "untitled1"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde_yaml = "0.9.34+deprecated"
+regex = "1.11.1"
+futures = "0.3.31"
+tokio = { version = "1.43", features = ["test-util", "full"] }
+
+[dev-dependencies]
+tokio = { version = "1.43", features = ["test-util", "full"] }
