@@ -573,6 +573,7 @@
 mod cluster_config;
 mod find_available_iprange;
 mod cluster;
+mod ccm_cli;
 
 fn main() {
 

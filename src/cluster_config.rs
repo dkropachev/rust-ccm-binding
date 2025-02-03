@@ -13,6 +13,13 @@ pub enum ScyllaConfig {
     Map(HashMap<String, ScyllaConfig>),
 }
 
+
+impl Default for ScyllaConfig {
+    fn default() -> Self {
+        Self::Map(HashMap::new())
+    }
+}
+
 impl ScyllaConfig {
     pub fn to_yaml(&self) -> Value {
         match self {
